@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JS_GR78_L08</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+<h2>Vote for Your Favorite Politician</h2>
+
+<div class="poll-container">
+    <label for="vote">Choose a politician:</label>
+    <select id="vote">
+        <option value="">Select a politician</option>
+        <option value="Politician1">Politician1</option>
+        <option value="Politician2">Politician2</option>
+        <option value="Politician3">Politician3</option>
+        <option value="Politician4">Politician4</option>
+    </select>
+    <button onclick="submitVote()">Vote</button>
+</div>
+
+<div class="results-container" id="results" style="display: none;">
+    <h3>Poll Results</h3>
+    <div class="progress-bar-container">
+        <div id="politician1-bar" class="progress-bar" style="width: 0%; background-color: #4CAF50;">Politician1: 0%</div>
+    </div>
+    <div class="progress-bar-container">
+        <div id="politician2-bar" class="progress-bar" style="width: 0%; background-color: #FFEB3B;">Politician2: 0%</div>
+    </div>
+    <div class="progress-bar-container">
+        <div id="politician3-bar" class="progress-bar" style="width: 0%; background-color: #FF5722;">Politician3: 0%</div>
+    </div>
+    <div class="progress-bar-container">
+        <div id="politician4-bar" class="progress-bar" style="width: 0%; background-color: #9C27B0;">Politician4: 0%</div>
+    </div>
+    <div id="max-min" style="margin-top: 20px;"></div>
+</div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

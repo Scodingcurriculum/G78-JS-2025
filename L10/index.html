@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date-Wise To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Date-Wise To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <input type="date" id="dateInput">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+</body>
+</html>

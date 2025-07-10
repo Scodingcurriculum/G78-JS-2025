@@ -1,0 +1,7 @@
+{
+  "parking_slots": {
+    "1": { "status": "available" },
+    "2": { "status": "reserved" },
+    "3": { "status": "available" }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+
+<!-- Firebase Auth -->
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+
+  <script src="script.js"></script>
+ </head>
+<body>
+
+  <div class="container">
+    <div class="tabs">
+      <button id="loginTab" class="active" onclick="showForm('login')">Login</button>
+      <button id="signupTab" onclick="showForm('signup')">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="form active">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="submit-btn" onclick="loginUser()">Login</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signupForm" class="form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="submit-btn" onclick="signupUser()">Sign Up</button>
+    </div>
+  </div>

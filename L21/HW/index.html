@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscription Plans</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+
+  
+<script>
+  (function(){
+    emailjs.init("YOUR PUBLIC KEY"); // Replace this
+  })();
+</script>
+
+  <script src="main.js"></script>
+</head>
+<body>
+  <label>Email:</label><br>
+<input type="email" id="userEmail" placeholder="you@example.com" required><br><br>
+
+<h2>Choose Your Subscription Plan</h2>
+
+    <div class="plans">
+      <div class="plan" onclick="openPayment('Basic Plan', '$5/month')">
+        <h3>Basic Plan</h3>
+        <p>$5/month</p>
+      </div>
+      <div class="plan" onclick="openPayment('Pro Plan', '$10/month')">
+        <h3>Pro Plan</h3>
+        <p>$10/month</p>
+      </div>
+      <div class="plan" onclick="openPayment('Premium Plan', '$20/month')">
+        <h3>Premium Plan</h3>
+        <p>$20/month</p>
+      </div>
+    </div>
+  
+    <div class="modal" id="paymentModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <h3 id="selectedPlan">Plan Name</h3>
+        <p id="selectedPrice">Plan Price</p>
+        <label>Card Number:</label><br>
+        <input type="text" placeholder="1234 5678 9012 3456"><br><br>
+        <label>Expiry:</label><br>
+        <input type="text" placeholder="MM/YY"><br><br>
+        <label>CVV:</label><br>
+        <input type="text" placeholder="123"><br><br>
+        <button onclick="submitPayment()">Pay</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

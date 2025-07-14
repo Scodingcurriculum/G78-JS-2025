@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+</head>
+<body>
+  
+<div class="container">
+    <h1>📝 Realtime Notes</h1>
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <button id="addNoteBtn">Add Note</button>
+    <ul id="notesList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
